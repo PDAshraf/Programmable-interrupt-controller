@@ -1,0 +1,8 @@
+create_driver interrupt_controller_driver
+set_sw_property hw_class_name interrupt_controller_ip
+set_sw_property version 1
+set_sw_property min_compatible_hw_version 1.0
+add_sw_property bsp_subdirectory drivers
+add_sw_property c_source HAL/src/intr_drivers.c
+add_sw_property include_source HAL/inc/intr_drivers.h
+add_sw_property supported_bsp_type HAL
